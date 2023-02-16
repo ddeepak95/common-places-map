@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.6em !important;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+#control-section {
+  padding: 0px 20px;
+}
+
+#map {
+  position: absolute;
+  cursor: grab;
+  z-index: 0;
+  top: 0px;
+  bottom: 0;
+  /* height: 300px; */
+  width: 70%;
+}
+
+#places-list-container {
+  overflow-y: scroll;
+  float: left;
+  width: 100%;
+  height: calc(100vh - 300px);
+}
+
+#places-list #listElement {
+  margin-top: 20px;
+}
+
+.uk-grid {
+  flex-wrap: nowrap;
+}
+
+.placeImg {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.uk-grid .text-container {
+  padding: 10px 5px 0px 10px;
+}
+
+.text-container .uk-card-title {
+  font-size: 1.1em;
+  text-transform: capitalize;
+  max-width: 80px;
+  text-overflow: ellipsis;
+}
+
+.rating {
+  float: right;
+}
+
+.uk-button.yelpButton {
+  margin: 5px 0px 0px 0px;
+}
+
+.uk-form-label {
+  margin-top: 10px;
+}
